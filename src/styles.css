@@ -21,10 +21,27 @@
   background-color: #c0fdff;
 }
 
+.top-bar {
+  display: flex;
+  margin: auto;
+  width: 60rem;
+}
+
 input {
   display: block;
   width: 20rem;
   height: 4rem;
-  margin: auto;
   font-size: 3rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+button {
+  background-color: thistle;
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 10%;
 }

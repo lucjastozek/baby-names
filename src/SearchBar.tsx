@@ -8,6 +8,7 @@ function SearchBar({ inpVal, setInpVal }: SearchBarProps): JSX.Element {
       type="text"
       value={inpVal}
       onChange={(event) => setInpVal(event.target.value)}
+      placeholder="Search for a name"
     />
   );
 }

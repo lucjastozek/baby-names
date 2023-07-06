@@ -19,3 +19,11 @@
 .m {
   background-color: #c0fdff;
 }
+
+input {
+  display: block;
+  width: 20rem;
+  height: 4rem;
+  margin: auto;
+  font-size: 3rem;
+}

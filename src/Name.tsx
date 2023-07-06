@@ -1,15 +1,28 @@
 interface NameProps {
   id: number;
   name: string;
-  sex: string;
+  sex: "f" | "m";
+}
+interface NameBlockProps {
+  name: NameProps;
+  favourites: NameProps[];
+  setFavourites: React.Dispatch<React.SetStateAction<NameProps[]>>;
   key: number;
 }
-function Name({ id, name, sex, key }: NameProps): JSX.Element {
+function NameBlock({
+  name,
+  favourites,
+  setFavourites,
+}: NameBlockProps): JSX.Element {
   return (
-    <p className={sex} id="{key}">
-      {name}
+    <p
+      className={name.sex}
+      id="{key}"
+      onClick={() => setFavourites([...favourites, name])}
+    >
+      {name.name}
     </p>
   );
 }
 
-export default Name;
+export default NameBlock;

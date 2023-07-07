@@ -28,7 +28,7 @@ function App(): JSX.Element {
     <>
       <div className="top-bar">
         <SearchBar inpVal={inpVal} setInpVal={setInpVal} />
-        <button onClick={() => setSex("")}>X</button>
+        <button onClick={() => setSex("")}>All</button>
         <button onClick={() => setSex("f")}>F</button>
         <button onClick={() => setSex("m")}>M</button>
       </div>
